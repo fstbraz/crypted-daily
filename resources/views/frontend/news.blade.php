@@ -16,7 +16,16 @@
                             <div class="small-text">
                                 <i class="fa fa-calendar"></i>&nbsp;&nbsp;{{ $data->published_on }}
                             </div>
-                            <p>{{ $data->body }}</p>
+                            <div class="d-flex flex-row">
+                                <div class="d-flex align-items-start hidden-xs-down">
+                                    <a href="{{ route('news.go', $data->hashid) }}" rel="nofollow" target="_blank">
+                                        <img src="{{ $data->imgUrl }}" class="img-responsive" style="padding-right: 9px; width:110px;" alt="{{ $data->title }}">
+                                    </a>
+                                </div>
+                                <div>
+                                     <p>{{ $data->body }}</p>
+                                </div>
+                            </div>
                             <div class="bottom-article">
                                 <a href="{{ route('news.go', $data->hashid) }}" rel="nofollow" target="_blank"
                                    class="pull-right btn btn-sm btn-rounded btn-outline-primary">@lang('buttons.news.read_more')

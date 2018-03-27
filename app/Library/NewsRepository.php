@@ -42,6 +42,8 @@ class NewsRepository
                         'hashid' => $d['hashid'],
                         'published_on' => $d['published_on'],
                         'title' => $d['title'],
+                        'imgUrl' => $d['imageurl'],
+                        'lang' => $d['lang'],
                         'url' => $d['url'],
                         'body' => $d['body'],
                         'last_updated' => Carbon::now()

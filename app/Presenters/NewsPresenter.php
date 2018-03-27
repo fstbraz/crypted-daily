@@ -17,4 +17,5 @@ class NewsPresenter extends BasePresenter
     {
         return Carbon::instance($this->wrappedObject->published_on)->diffForHumans(Carbon::now());
     }
+
 }

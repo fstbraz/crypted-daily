@@ -23,4 +23,6 @@ Homestead.json
 storage/
 .DS_Store
 .vscode/settings.json
-storage/framework/sessions/UjpbxSk19hxyMf2r52lI6ITlv0nGeg6Siwlg1rxY
+storage/framework/sessions/
+IlluminateFoundationComposerScripts::postUpdate
+storage/framework/views/

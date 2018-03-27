@@ -19,7 +19,9 @@ class CreateNewsTable extends Migration
             $table->dateTime('published_on')->useCurrent()->index();
             $table->text('title');
             $table->text('url');
+            $table->text('imgUrl');
             $table->text('body');
+            $table->text('lang');
             $table->dateTime('last_updated')->useCurrent()->index();
         });
     }

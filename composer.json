@@ -22,6 +22,7 @@
     "mccool/laravel-auto-presenter": "^6.2",
     "predis/predis": "^1.1",
     "renatomarinho/laravel-page-speed": "^1.8",
+    "roumen/feed": "~2.10",
     "roumen/sitemap": "^2.7",
     "themsaid/laravel-langman": "^1.3"
   },

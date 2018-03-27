@@ -172,6 +172,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
+        Roumen\Feed\FeedServiceProvider::class,
         
     ],
 
@@ -223,6 +224,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
         'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
+        'Feed' => Roumen\Feed\Feed::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];

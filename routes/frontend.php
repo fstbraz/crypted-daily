@@ -39,4 +39,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
         Route::get('txt', 'SitemapController@txt')->name('txt');
     });
 
+
 });
+
+Route::get('feed/{type?}', ['as' => 'feed.atom', 'uses' => 'FeedsController@getFeed']);
+
+

@@ -2,7 +2,7 @@
 namespace App\Services\Feed;
 
 use Illuminate\Support\Facades\App;
-use DB; 
+use DB;
 
 class FeedBuilder
 {
@@ -37,18 +37,12 @@ class FeedBuilder
 
             if (!empty($posts)) {
                 $feed->pubdate = $posts[0]->published_on;
+
                 foreach ($posts as $post) {
                     
-                    // $link = route('post.single', ["id" => $post->id, "slug" => $post->slug]);
-
-                    // $author = "";
-                    // if(!empty($post->user)){
-                    //     $author = $post->user->name;
-                    // }
-                    // set item's title, author, url, pubdate, description, content, enclosure (optional)*
-                    $feed->add('teste', 'teste', 'teste', 'teste', 'teste', $post->body);
+                    $link = route('news.go', ["id" => $post->hashid]);
+                    $feed->add($post->title, 'Crypted-Daily.com', $link, $post->published_on, $post->body, $post->body);
                  
-                    //var_dump($feed);die;
                 }
             }
         }
@@ -66,7 +60,7 @@ class FeedBuilder
     private function getFeedData()
     {
         $maxSize = $this->config['max_size'];
-        $posts = DB::table('news')->orderBy('id', 'desc')->take(1)->get();
+        $posts = DB::table('news')->orderBy('id', 'desc')->take(10)->get();
         return $posts;
     }
 }

@@ -28,7 +28,7 @@
                             </div>
                             <div class="bottom-article">
                                 <a href="{{ route('news.go', $data->hashid) }}" rel="nofollow" target="_blank"
-                                   class="pull-right btn btn-sm btn-rounded btn-outline-primary">@lang('buttons.news.read_more')
+                                   class="pull-right btn btn-sm btn-rounded">@lang('buttons.news.read_more')
                                     <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>

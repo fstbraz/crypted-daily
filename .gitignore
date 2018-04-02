@@ -24,5 +24,4 @@ storage/
 .DS_Store
 .vscode/settings.json
 storage/framework/sessions/
-IlluminateFoundationComposerScripts::postUpdate
 storage/framework/views/

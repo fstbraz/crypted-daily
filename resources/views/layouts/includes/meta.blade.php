@@ -12,13 +12,13 @@
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="{{ \App\Library\SeoHelper::title(isset($coin) ? $coin : null) }}"/>
 <meta property="og:description" content="{{ \App\Library\SeoHelper::metaDescription(isset($coin) ? $coin : null) }}"/>
-<meta property="og:image" content="{{ asset('asset/images/coinindex-cryptocurrency-script.png')  }}"/>
+<meta property="og:image" content="{{ asset('asset/images/crypted-daily.png')  }}"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta property="twitter:title" content="{{ \App\Library\SeoHelper::title(isset($coin) ? $coin : null) }}"/>
 <meta property="twitter:description"
       content="{{ \App\Library\SeoHelper::metaDescription(isset($coin) ? $coin : null) }}"/>
-<meta property="twitter:image" content="{{ asset('asset/images/coinindex-cryptocurrency-script.png')  }}"/>
+<meta property="twitter:image" content="{{ asset('asset/images/crypted-daily.png')  }}"/>
 
 
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('asset/images/favicon.png') }}">

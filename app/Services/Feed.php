@@ -15,8 +15,8 @@ class FeedBuilder
 
     public function render($type)
     {
-        $feed = App::make("feed");	
-
+        $feed = App::make("feed");
+        
         if ($this->config['use_cache']) {
             $feed->setCache($this->config['cache_duration'], $this->config['cache_key']);
         }

@@ -120,10 +120,10 @@ return [
 
         'contact' => [
             'box_title' => 'Contact us',
-            'box_title_small' => 'entrer en contact avec nous en remplissant le formulaire ci-dessous',
-            'name' => 'votre nome',
-            'email' => 'votre adresse email',
-            'message' => 'votre message'
+            'box_title_small' => 'fill out the form to get in touch with us',
+            'name' => 'your name',
+            'email' => 'your email',
+            'message' => 'your message'
         ],
 
         'passwords' => [

@@ -19,6 +19,8 @@
                             <div class="d-flex flex-row">
                                 <div class="d-flex align-items-start hidden-xs-down">
                                     <a href="{{ route('news.go', $data->hashid) }}" rel="nofollow" target="_blank">
+                                            {{ $data->imgUrl }}
+                                            {{ $data->title }}
                                         <img src="{{ $data->imgUrl }}" class="img-responsive" style="padding-right: 9px; width:110px;" alt="{{ $data->title }}">
                                     </a>
                                 </div>

@@ -25,6 +25,7 @@ class FeedBuilder
             
             $posts = $this->getFeedData();
             
+            $feed->ctype = "text/xml";
             $feed->title = $this->config['feed_title'];
             $feed->description = $this->config['feed_description'];
             $feed->logo = $this->config['feed_logo'];
@@ -42,6 +43,7 @@ class FeedBuilder
                     
                     $link = route('news.go', ["id" => $post->hashid]);
                     $feed->add($post->title, 'Crypted-Daily.com', $link, $post->published_on, $post->body, $post->body);
+             
                  
                 }
             }

@@ -38,7 +38,7 @@ Route::get('rss-feed', function () {
  
     foreach ($posts as $post)
     {
-        $feed->add($post->title, 'Crypted Daily', URL::to(env('APP_URL').'news/go/'.$post->hashid), $post->published_on, $post->body, '<img src="'.$post->imgUrl.'" alt="'.$post->title.'"><p>'.$post->body.'</p> ');
+        $feed->add($post->title, 'Crypted Daily', URL::to(env('APP_URL').'news/go/'.$post->hashid), $post->published_on, $post->body, '');
     }
  
  

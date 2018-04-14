@@ -31,10 +31,12 @@
                             <h4 class="card-subtitle">@lang('home.card_subtitle')</h4>
                             <div class="message-box m-t-30">
                                 <div class="message-widget">
+                                    
                                     @foreach($top_coins as $symbol => $c)
+                                    
                                         <a class="coin_list" href="#" data-attr="{{ $symbol }}">
                                             <div class="user-img">
-                                                <img src="{{ asset('asset/images/coins/tn/' . $c['logo']) }}" alt="user"
+                                                <img src="{{ asset('asset/images/coins/tn/' . $c['logo']) }}" alt="{{ $c['name'] }} "
                                                      class="img-circle">
                                             </div>
                                             <div class="mail-contnet">

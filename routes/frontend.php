@@ -87,7 +87,6 @@ Route::group(['prefix' => 'sitemap', 'as' => 'sitemap.'], function () {
     Route::get('txt', 'SitemapController@txt')->name('txt');
 });
 
-Route::get('feed/{type?}', ['as' => 'feed.atom', 'uses' => 'FeedsController@getFeed']);
 
 
 
